@@ -15,7 +15,7 @@ namespace MediaTrPractises.CommandQuery
         }
         public List<StudentInformation> Handler(StudentInformation studentInformation)
         {
-            List<StudentInformation> students = new List<StudentInformation>();
+            List<StudentInformation> students = _studentService.GetAllStudent();
             students.Add(studentInformation);
             return students;
         }
